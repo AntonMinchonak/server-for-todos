@@ -3,5 +3,6 @@ export class CreateNoteDto {
     body: string
     importance: number
     date: string
-    time:string
+    time: string
+    isDeleted: boolean
 }

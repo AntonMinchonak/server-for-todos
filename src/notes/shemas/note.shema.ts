@@ -19,6 +19,9 @@ export class Note {
 
   @Prop()
   time: string;
+
+  @Prop()
+  isDeleted: boolean
 }
 
 export const NoteSchema = SchemaFactory.createForClass(Note);
