@@ -5,11 +5,14 @@ export type ProductDocument = Product & Document
 
 @Schema()
 export class Product {
-    @Prop()
-    title: string
+  @Prop()
+  title: string;
 
-    @Prop()
-    completed: boolean = false
+  @Prop()
+  completed: boolean = false;
+
+  @Prop()
+  id:string;
 }
 
 export const ProductSchema = SchemaFactory.createForClass(Product)

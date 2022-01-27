@@ -27,9 +27,9 @@ export class ProductsService {
     return this.productModel.findById(id);
   }
 
-  create(@Body() productDto: CreateProductDto): string {
-    return `${productDto.title} - Title. ${productDto.price + 1488} - Price`;
-  }
+  // create(@Body() productDto: CreateProductDto): string {
+  //   return `${productDto.title} - Title. ${productDto.price + 1488} - Price`;
+  // }
 
   createLoh(productDto: CreateProductDto): void {
     this.products.push({
