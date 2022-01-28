@@ -21,7 +21,9 @@ export class Note {
   time: string;
 
   @Prop()
-  isDeleted: boolean
+  isDeleted: boolean;
+  @Prop()
+  id: string;
 }
 
 export const NoteSchema = SchemaFactory.createForClass(Note);
