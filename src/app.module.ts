@@ -12,7 +12,7 @@ import { NotesModule } from './notes/notes.module';
     MongooseModule.forRoot("mongodb+srv://admin:admin@cluster0.l7lgv.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"),
     NotesModule,
   ],
-  controllers: [AppController, FistingController, ArticleController],
+  controllers: [AppController, ArticleController],
   providers: [AppService],
 })
 export class AppModule {}
