@@ -8,7 +8,7 @@ export class NotesController {
   constructor(private readonly productsService: NotesService) {}
 
   @Get()
-  getHui(): Promise<Note[]> {
+  getH(): Promise<Note[]> {
     return this.productsService.getAllDB();
   }
 

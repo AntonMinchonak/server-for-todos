@@ -9,14 +9,13 @@ export class ProductsController {
   constructor(private readonly productsService: ProductsService) {}
 
   @Get()
-  getHui(): Promise<Product[]>{
+  getH(): Promise<Product[]>{
     return this.productsService.getAllDB();
   }
 
   @Get(":id")
-  getPidor(@Param() params): Promise<Product> {
-    // return "getHui params" + params.id;
-    return this.productsService.getByIdDB(params.id);
+  getP(@Param("id") id: string): Promise<Product> {
+    return this.productsService.getByIdDB(id);
   }
 
   @Post()
