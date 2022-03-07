@@ -31,14 +31,14 @@ export class ProductsService {
   //   return `${productDto.title} - Title. ${productDto.price + 1488} - Price`;
   // }
 
-  createLoh(productDto: CreateProductDto): void {
-    this.products.push({
-      ...productDto,
-      id: Date.now().toString(),
-    });
-  }
+  // createL(productDto: CreateProductDto): void {
+  //   this.products.push({
+  //     ...productDto,
+  //     id: Date.now().toString(),
+  //   });
+  // }
 
-  async createLohDB(productDto: CreateProductDto): Promise<Product> {
+  async createDB(productDto: CreateProductDto): Promise<Product> {
     const newProduct = new this.productModel(productDto);
     return newProduct.save();
   }

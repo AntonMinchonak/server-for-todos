@@ -23,7 +23,7 @@ export class ProductsController {
   @Header("Control-Cache", "none")
   create(@Body() createProductDto: CreateProductDto): Promise<Product> {
     // return `${createProductDto.title} - Title. ${createProductDto.price + 228} - Price`;
-    return this.productsService.createLohDB(createProductDto);
+    return this.productsService.createDB(createProductDto);
   }
 
   @Delete(":id")
